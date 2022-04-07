@@ -1,0 +1,29 @@
+using System;
+namespace pro
+{
+    class Program
+    {
+        public static int calc(int x,int y,out int m,out int sub)
+        {
+            int s = x + y;
+            m = x * y;
+            sub = x - y;
+            return s;
+        }
+        static void Main(string[] args)
+        {
+            int sum, sub, multi;
+            sum=calc(20,14,out multi,out sub);
+            Console.WriteLine($"sum is:{sum}");
+            Console.WriteLine($"product is:{multi}");
+            Console.WriteLine($"sub is:{sub}");
+            Console.ReadLine();
+            
+        }
+
+
+
+       
+    } 
+   
+}
